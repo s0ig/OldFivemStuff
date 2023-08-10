@@ -1,0 +1,41 @@
+[ creator.lua ]
+    With creator script you can define new fields. 
+    Fields are saved to "newZones.lua", from which you have to copy them separately to the base of the zones.lua file.
+
+[ zones.lua ]
+
+    By default zone config looks like something like this..
+        [1] = {
+            x1 = 1831.521, y1 = 4809.399, z1 = 43.531,
+            x2 = 1842.288, y2 = 4819.492, z2 = 44.281,
+            x3 = 1852.803, y3 = 4809.562, z3 = 44.283,
+            x4 = 1841.667, y4 = 4798.834, z4 = 43.534,
+        },
+    and defined fields are on public sale.
+
+
+    By adding new variable "id" to array with corner points of field you make the field private.
+
+    [110] = {
+        id = "House address",
+		x1 = 2071.3303222656, y1 = 4999.02734375, z1 = 40.831024169922,
+		x2 = 2065.6823730469, y2 = 4998.9702148438, z2 = 40.647937774658,
+		x3 = 2062.3073730469, y3 = 5002.1586914062, z3 = 40.573337554932,
+		x4 = 2065.9208984375, y4 = 5007.38671875, z4 = 40.977405548096
+	},
+
+    This means that players can't 
+        - Buy this field from market
+        - Sell it to market
+        - Change field ownership
+    
+    You can easily modify the ownership of the private fields now with these two exports
+        AddOwner("id", identifier)
+        RemoveOwner("id")
+    
+
+
+    
+    
+    
+
