@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');
+
+body {
+	position: relative;
+	overflow: hidden;
+}
+
+#wrapper {
+	vertical-align: center;
+	position: absolute;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	display: none;
+}
+
+[id^=page] {
+	position: absolute;
+	left: 0px;
+	width: 600px;
+	height: 700px;
+	text-align: center;
+}
+
+#front {
+	position: relative;
+	width: 100%;
+	height:100%;
+	background: url("img/book/page3.png");
+	background-size: cover;
+}
+#back {
+	display: none;
+	position: relative;
+	width: 100%;
+	height:100%;
+	background: url("img/book/page2.png");
+	background-size: cover;
+}
+
+#front > #slot {
+	position: relative;
+	width: 250px;
+	height: 300px;
+	margin-left: 33.33px;
+	margin-top: 55px;
+	float: left;
+	/*border: 2px solid rgba(90,90,90,0.9);*/
+	text-align: center;
+}
+
+#back > #slot {
+	position: relative;
+	width: 250px;
+	height: 300px;
+	margin-left: 33.33px;
+	margin-top: 55px;
+	float: left;
+	/*border: 2px solid rgba(90,90,90,0.9);*/
+	text-align: center;
+}
+
+#slot:nth-child(4),#slot:nth-child(5) {
+	top: -35px;
+}
+
+#slot > img {
+	margin-bottom: 5px;
+	object-fit: contain;
+	max-height: 50px;
+}
+
+#item {
+	width: 92px;
+}
+
+h1 {
+	color: rgba(0,0,0,0.7);
+	font-family: 'Permanent Marker', cursive;
+	font-size: 25px;
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+span {
+	color: rgba(0,0,0,0.7);
+	font-family: 'Permanent Marker', cursive;
+	font-size: 15px;
+	text-align: left;
+}
+
+span > div {
+	position: relative;
+	float: left;
+}
+
+span > #label {
+	overflow: hidden;
+	width: 50%;
+}
+span > #marker {
+	margin-top: -3px;
+	text-align: right;
+	width: 50%;
+	float: right;
+}
+
+h2 {
+	position: absolute;
+	font-family: 'Permanent Marker', cursive;
+	left: 50%;
+	margin-bottom: 20px;
+	color: rgba(0,0,0,0.7);
+	font-size: 35px;
+	transform:translate(-50%, -50%);
+}
+
+hr {
+	position: absolute;
+	left: 50%;
+	transform:translate(-50%, -50%);
+	top: 55px;
+	width: 80%;
+	color: rgba(90,90,90,0.7);
+}
+
+
+
+#slot button {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 25px;
+	position: absolute;
+	bottom: 5px;
+	right: 20px;
+	width: 80px;
+	color: rgba(0,0,0,0.7);
+	height: 40px;
+	background: rgba(0,0,0,0);
+	border: 0;
+}
+
+
+
+#amount {
+	text-align: center;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 25px;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	width: 100px;
+	color: rgba(0,0,0,0.7);
+	height: 25px;
+	background: rgba(0,0,0,0);
+	border: none;
+	border-bottom: 2px solid rgba(90,90,90,0.7);
+}
+
+#xamount {
+	text-align: center;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 25px;
+	position: absolute;
+	bottom: 18px;
+	left: 107px;
+	width: 20px;
+	color: rgba(0,0,0,0.7);
+	height: 25px;
+}
+
+#menu {
+	position: absolute;
+	width: 50%;
+	text-align: center;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 35px;
+}
+
+#menu:hover {
+	font-size: 40px;
+}
+
+
+
+#categorys {
+	position: absolute;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 30px;
+	color: rgba(0,0,0,0.7);
+ 	top: 50%; right: 50%;
+  	transform: translate(50%,-50%);
+	text-align: center;
+}
+
+#categorys p {
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+
+
+#slot button:hover {
+	color: rgba(0,0,0,0.9); 
+}
+#categorys p:hover {
+	color: rgba(0,0,0,0.9); 
+}
+button:focus {outline:0;}
+#amount:focus {outline:0;}
+del {
+	color: rgba(90,90,90,0.7);
+}
+
+
+.bigPic {
+	position : absolute;
+	width : 100%;
+	height : 100%;
+	margin : 0;
+}
+
+.bigPic span > #label {
+	font-size: 25px;
+	left: 2.5%;
+	width: 55%;
+}
+
+.bigPic span > #marker {
+	right: 2.5%;
+	font-size: 25px;
+	width: 45%;
+}
+
+.bigPic #slot > img {
+	margin-bottom: 5px;
+	object-fit: contain;
+	min-height: 100px;
+}
+
+.bigPic #button {
+	right: 50px;
+}
+
+#progressBar {
+	position: absolute;
+	display: none;
+	font-family: 'Permanent Marker', cursive;
+	border-radius: 5px;
+	border: 3px solid black;
+	background: red;
+	font-size: 20px;
+	width: 350px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+	margin-top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, 0%);
+}
+
+#progressBar p {
+	margin-top: -8px;
+	margin-bottom: -8px;
+}
+
